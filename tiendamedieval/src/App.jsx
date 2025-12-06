@@ -1,7 +1,8 @@
-import { useState } from 'react'
+/* import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -33,3 +34,31 @@ function App() {
 }
 
 export default App
+
+import { useState } from 'react';
+*/
+import Header from "./components/Header.jsx";
+import Main from "./components/Main.jsx";
+import Products from "./components/Products.jsx";
+import Footer from "./components/Footer.jsx";
+
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+
+function App() {
+  return (
+    <>
+      <Header />
+<main>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/productos" element={<Products />} />
+        <Route path="/carrito" element={<h2>Proximamente Carrito</h2>} />
+      </Routes>
+</main>
+      <Footer />
+    </>
+  )
+}
+
+export default App;

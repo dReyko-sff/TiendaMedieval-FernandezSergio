@@ -1,0 +1,11 @@
+[
+  { "id": 1, "nombre": "Espada de Acero", "precio": 150, "img": "/media/espada.jpeg" },
+  { "id": 2, "nombre": "Escudo de Roble", "precio": 100, "img": "/media/escudoroble.jpeg" },
+  { "id": 3, "nombre": "Yelmo de Hierro", "precio": 80, "img": "/media/yelmohierro.jpeg" },
+  { "id": 4, "nombre": "Hacha de Guerra", "precio": 200, "img": "/media/hacha.jpeg" },
+  { "id": 5, "nombre": "Arco Élfico", "precio": 180, "img": "/media/arco.jpeg" },
+  { "id": 6, "nombre": "Ballesta Imperial", "precio": 250, "img": "/media/ballesta.jpeg" },
+  { "id": 7, "nombre": "Maza del Enano", "precio": 120, "img": "/media/maza.jpeg" },
+  { "id": 8, "nombre": "Lanza de los Dioses", "precio": 300, "img": "/media/lanza.jpeg" },
+  { "id": 9, "nombre": "Baculo Magico", "precio": 500, "img": "/media/baculo.jpeg" }
+]

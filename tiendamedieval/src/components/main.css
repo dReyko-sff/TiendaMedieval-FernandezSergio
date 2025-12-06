@@ -1,0 +1,73 @@
+
+.main_container {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* diseño del boton/atajo */
+.atajo {
+  margin-bottom: 50px;
+}
+
+.atajo_title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.atajo_subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 600px;
+  margin: 10px auto 25px;
+}
+
+.atajo_button {
+  display: inline-block;
+  background-color: #7a2d2d;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.atajo_button:hover {
+  background-color: #9b3a3a;
+  transform: scale(1.05);
+}
+
+
+
+/*diseño de las tarjetas/flyers*/
+
+.flyers {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.flyer_card {
+  background: #f4f4f4;
+  color: darkviolet;
+  padding: 20px;
+  width: 240px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  transition: transform 0.2s ease;
+}
+
+.flyer_card:hover {
+  transform: translateY(-5px);
+}
+
+.flyer_card h3 {
+  margin-bottom: 10px;
+}
+
+.flyer_card p {
+  margin: 0;
+  color: #444;
+}
