@@ -1,7 +1,7 @@
 
 import { Link , NavLink , Routes , Route } from "react-router-dom";
 import "./header.css";
-import WidgetCarrito from "./CarritoWidget.jsx";
+import WidgetCarrito from "./Carrito/CarritoWidget.jsx";
 
 
 function Header() {

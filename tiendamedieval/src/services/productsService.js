@@ -1,0 +1,16 @@
+import { collection, getDocs, query, where } from "firebase/firestore";
+import { db } from "../firebase";
+
+export async function getAllProducts() {
+  const snap = await getDocs(collection(db, "products"));
+  return snap.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+}
+
+export async function getProductsByCategory(categoria) {
+  const q = query(
+    collection(db, "products"),
+    where("categoria", "==", categoria)
+  );
+  const snap = await getDocs(q);
+  return snap.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+}
