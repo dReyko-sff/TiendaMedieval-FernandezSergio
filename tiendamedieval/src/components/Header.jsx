@@ -1,6 +1,8 @@
 
-import { Link , NavLink , Routes , Route } from "react-router";
+import { Link , NavLink , Routes , Route } from "react-router-dom";
 import "./header.css";
+import WidgetCarrito from "./CarritoWidget.jsx";
+
 
 function Header() {
 
@@ -14,7 +16,10 @@ function Header() {
         <nav className="header_nav">
           <NavLink to="/" className="nav_link">Home</NavLink>
           <NavLink to="/productos" className="nav_link">Productos</NavLink>
-          <NavLink to="/carrito" className="nav_link">Carrito</NavLink>
+          <NavLink to="/ataque" className="nav_link">Ataque</NavLink>
+          <NavLink to="/defensa" className="nav_link">Defensa</NavLink>
+          <NavLink to="/magia" className="nav_link">Magia</NavLink>
+          <WidgetCarrito />
         </nav>
       </header>
     )

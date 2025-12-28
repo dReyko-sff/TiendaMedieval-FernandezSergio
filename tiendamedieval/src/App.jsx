@@ -1,63 +1,30 @@
-/* import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
-
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
-
-export default App
-
-import { useState } from 'react';
-*/
 import Header from "./components/Header.jsx";
 import Main from "./components/Main.jsx";
 import Products from "./components/Products.jsx";
 import Footer from "./components/Footer.jsx";
+import VistaCarrito from "./components/VistaCarrito.jsx";
 
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
+import { CartProvider } from "./contexto/ContextoCarrito.jsx";
 
 function App() {
   return (
-    <>
+    <CartProvider>
       <Header />
-<main>
-      <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/productos" element={<Products />} />
-        <Route path="/carrito" element={<h2>Proximamente Carrito</h2>} />
-      </Routes>
-</main>
+      <main>
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/productos" element={<Products />} />
+          <Route path="/ataque" element={<Products categoria="ataque" />} />
+          <Route path="/magia" element={<Products categoria="magia" />} />
+          <Route path="/carrito" element={<VistaCarrito />} />
+          <Route path="/defensa" element={<Products categoria="defensa" />} />
+        </Routes>
+      </main>
       <Footer />
-    </>
+    </CartProvider>
   )
 }
 
