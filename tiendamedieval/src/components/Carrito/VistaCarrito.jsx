@@ -26,7 +26,7 @@ function VistaCarrito() {
     <div>
       <h2>Carrito</h2>
 
-      {cart.length === 0 && <p>El carrito está vacío. ¡Agrega productos desde la tienda!</p>}
+      {cart.length === 0 && <p style={{ textAlign: 'center', fontSize: '18px', color: '#666', margin: '50px 0' }}>El carrito está vacío. ¡Agrega productos desde la tienda!</p>}
 
       {cart.length > 0 && (
         <button onClick={clearCart} style={{ marginBottom: '10px', backgroundColor: '#dc3545', color: 'white', border: 'none', padding: '8px 16px', borderRadius: '4px', cursor: 'pointer' }}>
@@ -44,7 +44,7 @@ function VistaCarrito() {
       ))}
 
       {cart.length > 0 && (
-        <form onSubmit={handleSubmit}>
+        <form className="formulario-compra" onSubmit={handleSubmit}>
           <input
             type="text"
             name="nombre"
@@ -63,22 +63,24 @@ function VistaCarrito() {
         </form>
       )}
 
-      <h3>Historial de Compras</h3>
-      {history.length > 0 && (
-        <button onClick={clearHistory} style={{ marginBottom: '10px', backgroundColor: '#dc3545', color: 'white', border: 'none', padding: '8px 16px', borderRadius: '4px', cursor: 'pointer' }}>
-          Limpiar Historial
-        </button>
-      )}
-      {history.map((purchase, idx) => (
-        <div key={idx}>
-          <p>Compra del {new Date(purchase.date).toLocaleString()}</p>
-          <ul>
-            {purchase.items.map((item, i) => (
-              <li key={i}>{item.nombre} - ${item.precio}</li>
-            ))}
-          </ul>
-        </div>
-      ))}
+      <div style={{ marginTop: '50px', borderTop: '1px solid #ccc', paddingTop: '20px' }}>
+        <h3>Historial de Compras</h3>
+        {history.length > 0 && (
+          <button onClick={clearHistory} style={{ marginBottom: '10px', backgroundColor: '#dc3545', color: 'white', border: 'none', padding: '8px 16px', borderRadius: '4px', cursor: 'pointer' }}>
+            Limpiar Historial
+          </button>
+        )}
+        {history.map((purchase, idx) => (
+          <div key={idx}>
+            <p>Compra del {new Date(purchase.date).toLocaleString()}</p>
+            <ul>
+              {purchase.items.map((item, i) => (
+                <li key={i}>{item.nombre} - ${item.precio}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

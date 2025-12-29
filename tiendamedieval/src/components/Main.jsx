@@ -4,9 +4,9 @@ function Main() {
   return (
     <main className="main_container">
       <section className="atajo">
-        <h1 className="atajo_title">Bienvenido a la Forja Medieval HF</h1>
+        <h1 className="atajo_title">Bienvenido a la Forja Medieval <br /> "dreyko"</h1>
         <p className="atajo_subtitle">
-          Armas, escudos y piezas forjadas con dedicación, fuego y tradición.
+          Armas, escudos y piezas forjadas con dedicación, fuego y tradición guerrera.
         </p>
 
         <a href="/productos" className="atajo_button">

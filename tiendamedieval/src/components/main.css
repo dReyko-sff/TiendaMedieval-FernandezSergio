@@ -71,3 +71,54 @@
   margin: 0;
   color: #444;
 }
+
+/* estilo del formulario */
+
+
+.formulario-compra  {
+  max-width: 360px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: linear-gradient(180deg, #ffae00, #d80101);
+  border: 3px solid #7a5c2e;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  font-family: 'Cinzel', serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formulario-compra  input {
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: 2px solid darkviolet;
+  background-color: rgb(0, 0, 0);
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+.formulario-compra  input:focus {
+  outline: none;
+  border-color: #ffffff;
+  box-shadow: 0 0 6px rgba(59, 42, 20, 0.5);
+}
+
+.formulario-compra  button {
+  padding: 0.7rem;
+  background: linear-gradient(180deg, #2027bb, #040963);
+  color: #fdf6e3;
+  border: 2px solid #2a1d0f;
+  border-radius: 8px;
+  font-family: 'Cinzel', serif;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.formulario-compra button:hover {
+  background: linear-gradient(180deg, #000002, #c90303);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}

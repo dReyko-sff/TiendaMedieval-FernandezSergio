@@ -13,7 +13,7 @@ function WidgetCarrito() {
           position: "absolute",
           top: "-8px",
           right: "-10px",
-          background: "red",
+          background: "#ff6b6b",
           color: "white",
           borderRadius: "50%",
           padding: "2px 6px",

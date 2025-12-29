@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240">
+  <defs>
+    <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d6d6d6"/>
+      <stop offset="100%" stop-color="#7a7a7a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Shield base -->
+  <path
+    d="M40 20 H160 V120 C160 170 100 210 100 210 C100 210 40 170 40 120 Z"
+    fill="url(#metal)"
+    stroke="#2b2b2b"
+    stroke-width="6"
+  />
+
+  <!-- Cross -->
+  <rect x="90" y="50" width="20" height="100" fill="#2b2b2b"/>
+  <rect x="60" y="85" width="80" height="20" fill="#2b2b2b"/>
+</svg>
