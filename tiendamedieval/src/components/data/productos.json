@@ -1,0 +1,38 @@
+[
+  {
+    "nombre": "Espada de Acero",
+    "precio": 150,
+    "img": "https://via.placeholder.com/200x150?text=Espada",
+    "categoria": "ataque"
+  },
+  {
+    "nombre": "Escudo de Madera",
+    "precio": 100,
+    "img": "https://via.placeholder.com/200x150?text=Escudo",
+    "categoria": "defensa"
+  },
+  {
+    "nombre": "Varita Mágica",
+    "precio": 200,
+    "img": "https://via.placeholder.com/200x150?text=Varita",
+    "categoria": "magia"
+  },
+  {
+    "nombre": "Hacha de Batalla",
+    "precio": 180,
+    "img": "https://via.placeholder.com/200x150?text=Hacha",
+    "categoria": "ataque"
+  },
+  {
+    "nombre": "Armadura de Placas",
+    "precio": 300,
+    "img": "https://via.placeholder.com/200x150?text=Armadura",
+    "categoria": "defensa"
+  },
+  {
+    "nombre": "Poción de Mana",
+    "precio": 50,
+    "img": "https://via.placeholder.com/200x150?text=Pocion",
+    "categoria": "magia"
+  }
+]
