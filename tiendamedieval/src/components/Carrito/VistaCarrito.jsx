@@ -17,13 +17,16 @@ function VistaCarrito() {
       title: '¡Compra realizada!',
       text: `Gracias ${buyer.nombre}, tu pedido fue recibido ⚔️`,
       icon: 'success',
-      confirmButtonText: 'Aceptar'
+      timer: 3000,
+      showConfirmButton: false
     });
   };
 
   return (
     <div>
       <h2>Carrito</h2>
+
+      {cart.length === 0 && <p>El carrito está vacío. ¡Agrega productos desde la tienda!</p>}
 
       {cart.length > 0 && (
         <button onClick={clearCart} style={{ marginBottom: '10px', backgroundColor: '#dc3545', color: 'white', border: 'none', padding: '8px 16px', borderRadius: '4px', cursor: 'pointer' }}>
